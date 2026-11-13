@@ -45,6 +45,19 @@ MQTT, a tide gauge over CSV).
 
 For connector `config` and `mapping`, follow https://induqt.ai/docs/connectors.
 
+**Preview long enough.** Plant gateways often publish every 10–30 s. Run
+`preview_mqtt` for 15 s; a 5 s preview can see nothing on a healthy topic.
+
+**The ingest key.** Through the connector, `create_ingest_key` returns the
+key's prefix and the ingest URL, not the full key. Tell the user to copy the
+full key from the InduQT app (Sites → the site → keys) straight into the
+gateway; never ask them to paste it into the chat.
+
+**History length.** InduQT compares a window with the machine's own history.
+A CSV of a few hours has no baseline: the multivariate checks need about
+5–8 hours and the wear trend about 5 days. Ask for at least a few days of
+normal running before the period in question.
+
 **Credentials.** Browse and preview take a user name and password for that
 call only. Ask for a read-only account. Never repeat a password, key or token
 back in the chat, never write one into a file, and remind the user that an
