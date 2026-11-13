@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "induqt": {
+      "type": "http",
+      "url": "https://api.induqt.ai/mcp"
+    }
+  }
+}
