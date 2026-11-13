@@ -1,0 +1,18 @@
+{
+  "name": "induqt",
+  "owner": {
+    "name": "InduQT (Kamna Ventures, LLC)",
+    "email": "support@induqt.ai"
+  },
+  "metadata": {
+    "description": "InduQT plugins for Claude"
+  },
+  "plugins": [
+    {
+      "name": "induqt-for-manufacturing",
+      "source": "./",
+      "description": "Connect machine signals, diagnose breakdowns and triage live problems with InduQT, paired with Claude for Manufacturing.",
+      "version": "0.1.0"
+    }
+  ]
+}
