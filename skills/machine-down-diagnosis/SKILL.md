@@ -64,6 +64,13 @@ the InduQT plan and ask. On a yes: `start_investigation` with the symptom in
 the user's words and `at` set to the event time — or
 `diagnose_investigation` on the one InduQT already opened.
 
+The diagnosis reads only the **two hours before `at`**. For a fault that
+built up slowly, those two hours are already inside the fault, so the
+baseline is wrong and rises look small (a vibration that tripled reads as
+"+20 %"). Use the onset `analyze_signals` found: set `at` to about two
+hours after the onset, and report the size of the change from
+`analyze_signals`, not from the diagnosis card.
+
 Report: likely cause with its percentage, the evidence with times, other
 causes, the first actions, and the **single next check that best separates
 the leading causes**. When InduQT says it is not sure ("asked twice, a
