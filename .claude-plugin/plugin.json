@@ -1,7 +1,7 @@
 {
   "name": "induqt-for-manufacturing",
   "displayName": "InduQT for Manufacturing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Live machine signals and troubleshooting for plants. Connects OPC UA, MQTT, Node-RED, historians and CSV history to InduQT, diagnoses breakdowns from the signals with the machine's own manuals and work orders, triages the problems InduQT's monitoring finds on its own, and lines up process signals for root cause and CAPA. Hands off to Claude for Manufacturing's breakdown-diagnosis, production-report and CAPA skills.",
   "author": {
     "name": "InduQT (Kamna Ventures, LLC)",
